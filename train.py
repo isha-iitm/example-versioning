@@ -19,6 +19,6 @@ prediction=mod_dt.predict(X_test)
 print('The accuracy of the Decision Tree is',"{:.3f}".format(metrics.accuracy_score(prediction,y_test)))
 
 os.makedirs('models', exist_ok=True)
-with open('models/week2_model.pkl', 'wb') as f:
+with open('models/week2.pkl', 'wb') as f:
     pickle.dump(mod_dt, f)
 print('Model saved')
